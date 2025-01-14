@@ -1,15 +1,24 @@
 {
   "files": {
-    "main.css": "/keduwebsite/static/css/main.8ebbabad.css",
-    "main.js": "/keduwebsite/static/js/main.d0494bb2.js",
-    "static/js/488.273886f3.chunk.js": "/keduwebsite/static/js/488.273886f3.chunk.js",
+    "main.css": "/keduwebsite/static/css/main.3309269a.chunk.css",
+    "main.js": "/keduwebsite/static/js/main.d1a52199.chunk.js",
+    "main.js.map": "/keduwebsite/static/js/main.d1a52199.chunk.js.map",
+    "runtime-main.js": "/keduwebsite/static/js/runtime-main.263be675.js",
+    "runtime-main.js.map": "/keduwebsite/static/js/runtime-main.263be675.js.map",
+    "static/js/2.2c92b765.chunk.js": "/keduwebsite/static/js/2.2c92b765.chunk.js",
+    "static/js/2.2c92b765.chunk.js.map": "/keduwebsite/static/js/2.2c92b765.chunk.js.map",
+    "static/js/3.02eab29b.chunk.js": "/keduwebsite/static/js/3.02eab29b.chunk.js",
+    "static/js/3.02eab29b.chunk.js.map": "/keduwebsite/static/js/3.02eab29b.chunk.js.map",
     "index.html": "/keduwebsite/index.html",
-    "main.8ebbabad.css.map": "/keduwebsite/static/css/main.8ebbabad.css.map",
-    "main.d0494bb2.js.map": "/keduwebsite/static/js/main.d0494bb2.js.map",
-    "488.273886f3.chunk.js.map": "/keduwebsite/static/js/488.273886f3.chunk.js.map"
+    "precache-manifest.d36f317a6b172b2b5529eab0d514174e.js": "/keduwebsite/precache-manifest.d36f317a6b172b2b5529eab0d514174e.js",
+    "service-worker.js": "/keduwebsite/service-worker.js",
+    "static/css/main.3309269a.chunk.css.map": "/keduwebsite/static/css/main.3309269a.chunk.css.map",
+    "static/js/2.2c92b765.chunk.js.LICENSE.txt": "/keduwebsite/static/js/2.2c92b765.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/css/main.8ebbabad.css",
-    "static/js/main.d0494bb2.js"
+    "static/js/runtime-main.263be675.js",
+    "static/js/2.2c92b765.chunk.js",
+    "static/css/main.3309269a.chunk.css",
+    "static/js/main.d1a52199.chunk.js"
   ]
 }
