@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/keduwebsite/static/css/main.8ebbabad.css",
-    "main.js": "/keduwebsite/static/js/main.2d5b0609.js",
-    "static/js/568.878b72fe.chunk.js": "/keduwebsite/static/js/568.878b72fe.chunk.js",
+    "main.css": "/keduwebsite/static/css/main.4689eb3a.css",
+    "main.js": "/keduwebsite/static/js/main.a2cce008.js",
+    "static/js/488.273886f3.chunk.js": "/keduwebsite/static/js/488.273886f3.chunk.js",
     "index.html": "/keduwebsite/index.html",
-    "main.8ebbabad.css.map": "/keduwebsite/static/css/main.8ebbabad.css.map",
-    "main.2d5b0609.js.map": "/keduwebsite/static/js/main.2d5b0609.js.map",
-    "568.878b72fe.chunk.js.map": "/keduwebsite/static/js/568.878b72fe.chunk.js.map"
+    "main.4689eb3a.css.map": "/keduwebsite/static/css/main.4689eb3a.css.map",
+    "main.a2cce008.js.map": "/keduwebsite/static/js/main.a2cce008.js.map",
+    "488.273886f3.chunk.js.map": "/keduwebsite/static/js/488.273886f3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8ebbabad.css",
-    "static/js/main.2d5b0609.js"
+    "static/css/main.4689eb3a.css",
+    "static/js/main.a2cce008.js"
   ]
 }
