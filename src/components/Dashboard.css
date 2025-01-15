@@ -1,8 +1,25 @@
+/* 대시보드 레이아웃 */
 .dashboard-container {
+  display: flex;
   padding: 20px;
-  text-align: center;
 }
 
+.left-side {
+  width: 22%; /* 화면의 22% */
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.right-side {
+  width: 70%; /* 화면의 70% */
+  margin-left: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+/* 게시판 스타일 */
 .board {
   margin-top: 20px;
 }

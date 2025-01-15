@@ -20,7 +20,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -40,17 +41,17 @@
       "last 1 safari version"
     ]
   },
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "description": "This project was bootstrapped with Create React App.",
   "main": "index.js",
-  "keywords": [],
-  "author": "",
   "license": "ISC",
   "devDependencies": {
     "browserify-zlib": "^0.2.0",
     "crypto-browserify": "^3.12.1",
+    "gh-pages": "^6.3.0",
     "path-browserify": "^1.0.1",
     "querystring-es3": "^0.2.1",
     "stream-browserify": "^3.0.0",
     "url": "^0.11.4"
-  }
+  },
+  "homepage": "https://keduweb.github.io/keduwebsite"
 }
