@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import LoginForm from './components/LoginForm';
-import Dashboard from './components/Dashboard';
+import './App.css';
+import LoginForm from './components/LoginForm'; // 로그인 컴포넌트
+import Dashboard from './components/Dashboard'; // 대시보드 컴포넌트
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -9,15 +10,15 @@ function App() {
     setIsLoggedIn(true);
   };
 
-  const renderContent = () => {
-    if (isLoggedIn) {
-      return <Dashboard />;
-    }
-
-    return <LoginForm onLoginSuccess={handleLoginSuccess} />;
-  };
-
-  return <div className="App">{renderContent()}</div>;
+  return (
+    <div className="App">
+      {!isLoggedIn ? (
+        <LoginForm onLoginSuccess={handleLoginSuccess} />
+      ) : (
+        <Dashboard />
+      )}
+    </div>
+  );
 }
 
 export default App;
