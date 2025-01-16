@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/keduwebsite/static/css/main.4689eb3a.css",
-    "main.js": "/keduwebsite/static/js/main.a2cce008.js",
+    "main.css": "/keduwebsite/static/css/main.f2286100.css",
+    "main.js": "/keduwebsite/static/js/main.1e583dd8.js",
     "static/js/488.273886f3.chunk.js": "/keduwebsite/static/js/488.273886f3.chunk.js",
     "index.html": "/keduwebsite/index.html",
-    "main.4689eb3a.css.map": "/keduwebsite/static/css/main.4689eb3a.css.map",
-    "main.a2cce008.js.map": "/keduwebsite/static/js/main.a2cce008.js.map",
+    "main.f2286100.css.map": "/keduwebsite/static/css/main.f2286100.css.map",
+    "main.1e583dd8.js.map": "/keduwebsite/static/js/main.1e583dd8.js.map",
     "488.273886f3.chunk.js.map": "/keduwebsite/static/js/488.273886f3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4689eb3a.css",
-    "static/js/main.a2cce008.js"
+    "static/css/main.f2286100.css",
+    "static/js/main.1e583dd8.js"
   ]
 }
