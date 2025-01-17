@@ -60,3 +60,34 @@
   border-radius: 5px;
   background-color: #f9f9f9;
 }
+
+/* 드롭다운 스타일 */
+.dropdown {
+  padding: 10px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* 탭 스타일 */
+.service-tabs .tab {
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #f1f1f1;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.service-tabs .tab.active {
+  background-color: #007bff;
+  color: white;
+}
+
+/* 세부 항목 */
+.side-tab {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: bold;
+}

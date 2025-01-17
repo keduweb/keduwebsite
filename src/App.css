@@ -39,43 +39,7 @@
 }
 
 
-/* "야옹이의 놀이터" 및 상태 항목 */
-.status {
-  display: flex;
-  align-items: center;
-  margin-top: 10px;
-  justify-content: space-between;  /* 좌우 배치 */
-  padding: 0 20px;  /* 여백 추가 */
-  
-  /* 위치 수동 조정 */
-  position: absolute; /* 위치를 절대값으로 설정 */
-  top: 200px; /* 상단에서 200px 위치 */
-  left: 50px; /* 왼쪽에서 50px 위치 */
-}
 
-.playground {
-  background-color: #007bff;
-  padding: 8px 12px;
-  color: white;
-  border-radius: 5px;
-  font-size: 14px;
-  
-  /* 위치 수동 조정 */
-  position: absolute; /* 위치를 절대값으로 설정 */
-  top: 0; /* 부모 .status 안에서의 상단 위치 */
-  left: 0; /* 부모 .status 안에서의 왼쪽 위치 */
-}
-
-/* 상태 항목 */
-.tabs {
-  display: flex;
-  font-size: 14px;
-  
-  /* 위치 수동 조정 */
-  position: absolute; /* 위치를 절대값으로 설정 */
-  top: 0; /* 부모 .status 안에서의 상단 위치 */
-  right: 0; /* 부모 .status 안에서의 오른쪽 위치 */
-}
 
 /* 서비스탭 */
 .service-tabs {

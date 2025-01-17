@@ -2,12 +2,20 @@ import React, { useState } from 'react';
 
 function Dashboard() {
   const [selectedTab, setSelectedTab] = useState('업무관리'); // 선택된 탭
+  const [selectedItem, setSelectedItem] = useState(''); // 선택된 항목
 
-  const posts = [
-    { id: 1, title: '첫 번째 게시글', content: '안녕하세요. 첫 번째 게시글입니다.' },
-    { id: 2, title: '두 번째 게시글', content: 'React를 배우는 중입니다.' },
-    { id: 3, title: '세 번째 게시글', content: '이 게시판은 예제입니다.' },
-  ];
+  // 탭에 따른 항목
+  const tabContent = {
+    업무관리: ['업무1', '업무2', '업무3'],
+    지식관리: ['지식1', '지식2', '지식3'],
+    통합자산관리: ['자산1', '자산2', '자산3'],
+    학교회계: ['회계1', '회계2', '회계3'],
+    서비스공통: ['서비스1', '서비스2', '서비스3'],
+  };
+
+  const handleSelectChange = (e) => {
+    setSelectedItem(e.target.value);
+  };
 
   return (
     <div className="dashboard-container">
@@ -18,61 +26,53 @@ function Dashboard() {
             <i className="fa fa-search" aria-hidden="true"></i> {/* 돋보기 아이콘 */}
           </div>
         </div>
-        <div className="status">
-          <span className="playground">야옹이의 놀이터</span> {/* '야옹이의 놀이터' 추가 */}
-          <div className="tabs">
-            <span>결재(긴급): 5</span>
-            <span>공람: 8</span>
-            <span>문서진행: 12</span>
-            <span>발송대기: 2</span>
-            <span>메모(긴급): 3</span>
-            <span>메일: 7</span>
-          </div>
-        </div>
       </div>
+
+      {/* 서비스 탭 */}
       <div className="service-tabs">
-        <div
-          className={`tab ${selectedTab === '업무관리' ? 'active' : ''}`}
-          onClick={() => setSelectedTab('업무관리')}
-        >
-          업무관리
-        </div>
-        <div
-          className={`tab ${selectedTab === '지식관리' ? 'active' : ''}`}
-          onClick={() => setSelectedTab('지식관리')}
-        >
-          지식관리
-        </div>
-        <div
-          className={`tab ${selectedTab === '통합자산관리' ? 'active' : ''}`}
-          onClick={() => setSelectedTab('통합자산관리')}
-        >
-          통합자산관리
-        </div>
-        <div
-          className={`tab ${selectedTab === '학교회계' ? 'active' : ''}`}
-          onClick={() => setSelectedTab('학교회계')}
-        >
-          학교회계
-        </div>
-        <div
-          className={`tab ${selectedTab === '서비스공통' ? 'active' : ''}`}
-          onClick={() => setSelectedTab('서비스공통')}
-        >
-          서비스공통
-        </div>
+        {['업무관리', '지식관리', '통합자산관리', '학교회계', '서비스공통'].map((tab) => (
+          <div
+            key={tab}
+            className={`tab ${selectedTab === tab ? 'active' : ''}`}
+            onClick={() => setSelectedTab(tab)}
+          >
+            {tab}
+          </div>
+        ))}
       </div>
+
+      {/* 항목 선택 */}
+      <div className="tab-content">
+        <div className="side-tab">
+          {selectedTab} 세부 항목 선택
+        </div>
+        <select
+          className="dropdown"
+          value={selectedItem}
+          onChange={handleSelectChange}
+        >
+          <option value="" disabled>
+            항목을 선택하세요
+          </option>
+          {tabContent[selectedTab]?.map((item, index) => (
+            <option key={index} value={item}>
+              {item}
+            </option>
+          ))}
+        </select>
+      </div>
+
       <div className="side-bar">
         <div className="side-tab">
           {selectedTab} 세부 항목들
         </div>
         <div className="board">
-          {posts.map((post) => (
-            <div key={post.id} className="board-item">
-              <h3>{post.title}</h3>
-              <p>{post.content}</p>
+          {selectedItem && (
+            <div className="board-item">
+              <h3>{selectedItem}</h3>
+              <p>{selectedItem} 내용</p>
             </div>
-          ))}
+          )}
         </div>
       </div>
     </div>
